@@ -1,0 +1,23 @@
+{
+  "name": "sapphire",
+  "version": "0.1.0",
+  "description": "Sapphire Framework CLI Companion",
+  "license": "MIT",
+  "author": "Fadion Dashi <jonidashi@gmail.com>",
+  "keywords": [
+    "sapphire",
+    "framework",
+    "generator"
+  ],
+  "main": "bin/sapphire.js",
+  "bin": {
+    "sapphire": "./bin/sapphire.js"
+  },
+  "engines": {
+    "node": ">= 8.3.0"
+  },
+  "preferGlobal": true,
+  "dependencies": {
+    "caporal": "^0.10.0"
+  }
+}
