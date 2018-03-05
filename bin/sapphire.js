@@ -8,7 +8,7 @@ program
   .version(version)
   .description('Sapphire Framework application and services generator')
 
-  .command('generate:controller', 'Generate a Controller').alias('g:c')
+  .command('gen:controller', 'Generate a Controller').alias('g:c')
   .argument('<name>', 'Controller class name')
   .option('--resource', 'Generate a resourceful Controller')
   .option('--force', 'Overwrite if file exists')
