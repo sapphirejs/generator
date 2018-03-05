@@ -2,7 +2,7 @@
 const program = require('caporal');
 const version = require('../package.json').version
 
-const GenerateController = require('../lib/commands/GenerateController')
+const GenerateController = require('../lib/commands/generate-controller')
 
 program
   .version(version)
