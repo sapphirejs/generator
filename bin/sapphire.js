@@ -10,6 +10,7 @@ program
   .command('gen:controller', 'Generate a Controller').alias('g:c')
   .argument('<name>', 'Controller class name')
   .option('--resource', 'Generate a resourceful Controller')
+  .option('--methods <methods>', 'Controller methods', program.LIST)
   .option('--force', 'Overwrite if file exists')
   .action(new GenerateController().action)
 

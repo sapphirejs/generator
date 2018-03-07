@@ -1,4 +1,5 @@
-class {{class}} {
+class {{name}} {
+{{#if resource}}
   index(req, res) {
 
   }
@@ -18,6 +19,12 @@ class {{class}} {
   delete(req, res) {
 
   }
+{{/if}}
+{{#each methods}}
+  {{this}}(req, res) {
+
+  }
+{{/each}}
 }
 
-module.exports = {{class}}
+module.exports = {{name}}

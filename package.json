@@ -18,6 +18,7 @@
   },
   "preferGlobal": true,
   "dependencies": {
-    "caporal": "^0.10.0"
+    "caporal": "^0.10.0",
+    "handlebars": "^4.0.11"
   }
 }
