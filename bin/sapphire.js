@@ -14,11 +14,13 @@ program
   .option('--resource', 'Generate a resourceful Controller')
   .option('--methods <methods>', 'Controller methods', program.LIST)
   .option('--force', 'Overwrite if file exists')
+  .option('--supress', 'Supress advices')
   .action(new GenerateController().action)
 
   .command('gen:middleware', 'Generate a Middleware').alias('g:mw')
   .argument('<name>', 'Middleware class name')
   .option('--force', 'Overwrite if file exists')
+  .option('--supress', 'Supress advices')
   .action(new GenerateMiddleware().action)
 
   .command('gen:secret', 'Generate a Cryptographically Strong Pseudo-Random Key').alias('g:s')
