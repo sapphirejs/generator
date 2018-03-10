@@ -19,6 +19,7 @@
   "preferGlobal": true,
   "dependencies": {
     "caporal": "^0.10.0",
+    "chalk": "^2.3.2",
     "handlebars": "^4.0.11"
   }
 }
