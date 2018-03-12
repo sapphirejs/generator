@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 const program = require('caporal');
 const version = require('../package.json').version
+const NewProject = require('../lib/commands/new-project')
 const GenerateController = require('../lib/commands/generate-controller')
 const GenerateMiddleware = require('../lib/commands/generate-middleware')
 const GenerateSecret = require('../lib/commands/generate-secret')
@@ -8,6 +9,10 @@ const GenerateSecret = require('../lib/commands/generate-secret')
 program
   .version(version)
   .description('Sapphire Framework application and services generator')
+
+  .command('new', 'Create a new Sapphire project')
+  .argument('[name]', 'Project name')
+  .action(new NewProject().action)
 
   .command('gen:controller', 'Generate a Controller').alias('g:c')
   .argument('<name>', 'Controller class name')
