@@ -5,6 +5,7 @@ const NewProject = require('../lib/commands/new-project')
 const GenerateController = require('../lib/commands/generate-controller')
 const GenerateMiddleware = require('../lib/commands/generate-middleware')
 const GenerateSecret = require('../lib/commands/generate-secret')
+const Intro = require('../lib/commands/intro')
 
 program
   .version(version)
@@ -31,5 +32,8 @@ program
   .command('gen:secret', 'Generate a Cryptographically Strong Pseudo-Random Key').alias('g:s')
   .option('--length <length>', 'Length of the Generated Secret', program.INT, 32)
   .action(new GenerateSecret().action)
+
+  .command('hi', 'Say Hi')
+  .action(new Intro().action)
 
 program.parse(process.argv)
