@@ -12,7 +12,8 @@ program
   .description('Sapphire Framework application and services generator')
 
   .command('new', 'Create a new Sapphire project')
-  .argument('[name]', 'Project name')
+  .argument('[directory]', 'Project directory')
+  .option('--template <template>', 'A predefined template or a Github repo', program.STRING)
   .action(new NewProject().action)
 
   .command('gen:controller', 'Generate a Controller').alias('g:c')
